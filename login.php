@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login System</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css?v=<?php echo time(); ?>">
 </head>
 <body>
 	<div class="header">
-		<h2>Login System with OTP</h2>
+		<h2>Login</h2>
 	</div>
 
 	<form method="post" action="login.php">

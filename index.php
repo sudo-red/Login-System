@@ -1,15 +1,13 @@
 <?php 
 include('func.php');
-
-if (!isset($_SESSION['email'])) 
+if (!isset($_SESSION['success'])) 
 {
-	$_SESSION['msg'] = "You must log in first";
 	header('location: login.php');
 }
 if (isset($_GET['logout'])) 
 {
 	session_destroy();
-	unset($_SESSION['email']);
+	unset($_SESSION['success']);
 	header("location: login.php");
 }
 ?>
@@ -18,12 +16,12 @@ if (isset($_GET['logout']))
 <html>
 <head>
 <title>Home</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style.css?v=<?php echo time(); ?>">
 </head>
 <body>
 
 <div class="header">
-	<h2>Logged in</h2>
+	<h2>Welcome</h2>
 </div>
 
 <div class="content">
@@ -33,19 +31,16 @@ if (isset($_GET['logout']))
 		<h3>
 		<?php 
 		echo $_SESSION['success']; 
-		unset($_SESSION['success']);
 		?>
 		</h3>
 	</div>
-	<?php endif ?>
 
 	<!-- user information -->
-	<?php  if (isset($_SESSION['email'])) :?>
 	
-	<p>Welcome <strong><?php echo $_SESSION['email']; ?></strong> !</p>
+	<h3>You are successfully signed in.</h3>
+	<h3>Click below to sign out</h3>
 	
-	<!-- logout button -->
-	<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+	<br/><br/><p><a href="index.php?logout='1'" class="btn" name="logout">Log out</a></p>
 	<?php endif ?>
 </div>
 

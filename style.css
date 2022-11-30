@@ -3,27 +3,31 @@
   padding: 0px;
 }
 body {
-  background-image: url("img.jpg");
-  background-color: #d0c7ffda;
-  color: #040208f1;
+  background-image: url("back.jpg");
+  background-color: #dae1ff;
+  font-family: 'Lexend Deca', sans-serif;
+  text-align: center;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
  }
 
 .header {
-  width: 50%;
-  margin: 50px auto 0px;
-  color: white;
-  background:rgba(65, 67, 189, 0.685);
+  width: 40%;
+  margin: 100px auto 0px;
+  color: rgb(41, 18, 77);
+  background:#dad4fc;
   text-align: center;
   border-bottom: none;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
   padding: 20px;
 }
 form, .content {
-  width: 50%;
-  margin: 0px auto;
+  width: 40%;
+  margin: auto;
   padding: 20px;
-  background:rgba(196, 240, 253, 0.781);
-  border-radius: 0px 0px 10px 10px;
+  background: #dae1ffa1;
+  border-radius: 0px 0px 20px 20px;
 }
 .input-group {
   margin: 10px 0px 10px 0px;
@@ -35,7 +39,7 @@ form, .content {
 }
 .input-group input {
   height: 30px;
-  width: 93%;
+  width: 95%;
   padding: 5px 10px;
   font-size: 16px;
   border-radius: 5px;
@@ -43,14 +47,15 @@ form, .content {
 }
 .btn {
   padding: 10px;
+  width: 50%; 
   font-size: 15px;
   color: white;
   background: #030030;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .error {
-  width: 92%; 
+  width: 95%; 
   margin: 0px auto; 
   padding: 10px; 
   border: 1px solid #a94442; 

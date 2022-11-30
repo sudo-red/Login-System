@@ -3,13 +3,13 @@
 <html>
 <head>
 	<title>Sign up</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css?v=<?php echo time(); ?>">
 </head>
 <body>
 
 <!-- Header for form-->
 <div class="header">
-	<h2>Register</h2>
+	<h2>Sign Up</h2>
 </div>
 
 <!-- REGISTRATION FORM -->
@@ -39,7 +39,7 @@
 	<button type="submit" class="btn" name="register">Register</button>
 	</div>
 	
-	<p>Already have an account? <a href="login.php">SIGN IN</a></p>
+	<p>Already have an account? <a href="login.php">LOG IN</a></p>
 </form>
 </body>
 </html>
