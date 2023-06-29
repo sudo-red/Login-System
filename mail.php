@@ -21,9 +21,9 @@
 // Port to connect smtp
 	$mail->Port = "587";
 // Set gmail username
-	$mail->Username = "stellacarlin19@gmail.com";
+	$mail->Username = "";
 // Set gmail password
-	$mail->Password = "hngmlftpfsjwujhj";
+	$mail->Password = "";
 // Email subject
 	$mail->Subject = "Your OTP Code";
 // Set sender email
