@@ -10,7 +10,7 @@ $email    = "";
 
 // connecting to the database 
 // also sets variable for connecting the db in functions
-$db = mysqli_connect('localhost', 'root', '', 'info');
+$db = mysqli_connect('localhost', '', '', '');
 
 // REGISTER USER
 if (isset($_POST['register'])) 
